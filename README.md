@@ -81,22 +81,30 @@ The modern data stack — tools for moving, transforming, storing, and querying 
 ### [dbt – Data Build Tool](data_engineering/intro_dbt.md)
 > *The T in ELT. SQL-first data transformation inside your warehouse.*
 
-- What dbt is and where it fits in the modern data stack
-- Project structure: models, sources, tests, macros, snapshots, seeds
-- Materializations: view, table, incremental, ephemeral
-- The `ref()` function and DAG-based dependency management
-- Jinja templating, packages, and the semantic layer
-- Medallion architecture (Bronze → Silver → Gold)
-- Full command cheat sheet
+| Section | Link |
+|---------|------|
+| What is dbt? | [→](data_engineering/intro_dbt.md#what-is-dbt) |
+| Project Structure | [→](data_engineering/intro_dbt.md#project-structure) |
+| Models & Materializations | [→](data_engineering/intro_dbt.md#materializations) |
+| Sources & `ref()` | [→](data_engineering/intro_dbt.md#sources--the-ref-function) |
+| Tests | [→](data_engineering/intro_dbt.md#tests) |
+| Macros & Jinja | [→](data_engineering/intro_dbt.md#macros--jinja) |
+| Snapshots (SCD Type 2) | [→](data_engineering/intro_dbt.md#snapshots) |
+| Incremental Models | [→](data_engineering/intro_dbt.md#incremental-models) |
+| Semantic Layer | [→](data_engineering/intro_dbt.md#semantic-layer--metrics) |
+| Cheat Sheet | [→](data_engineering/intro_dbt.md#cheat-sheet) |
 
 ### [dbt Interview Q&A](data_engineering/interview_dbt.md)
 > *Mid-level to senior/lead interview preparation for dbt.*
 
-- Incremental models and merge strategies
-- Late-arriving data, SCD Type 2 snapshots
-- Jinja macros and packages
-- Performance, CI/CD, and testing at scale
-- Real scenario-based questions with detailed answers
+| Section | Link |
+|---------|------|
+| Mid-Level Questions | [→](data_engineering/interview_dbt.md#mid-level-engineer-questions) |
+| Incremental Models & Strategies | [→](data_engineering/interview_dbt.md#incremental-models) |
+| Snapshots & SCD Type 2 | [→](data_engineering/interview_dbt.md#snapshots--scd-type-2) |
+| Jinja, Macros & Packages | [→](data_engineering/interview_dbt.md#jinja-macros--packages) |
+| Senior / Lead Questions | [→](data_engineering/interview_dbt.md#seniorlead-questions) |
+| Scenario Questions | [→](data_engineering/interview_dbt.md#scenario-questions) |
 
 ### [Databricks Platform](data_engineering/intro_databricks.html)
 > *The unified analytics platform — Spark, Delta Lake, ML, and SQL in one place.*
@@ -107,81 +115,127 @@ The modern data stack — tools for moving, transforming, storing, and querying 
 - Databricks SQL for BI workloads
 - MLflow integration for ML experiments
 
+> **Note:** This guide is an interactive HTML file — open it in a browser for the full experience with sidebar navigation.
+
 ### [OpenClaw – Data Lineage & Orchestration](data_engineering/intro_openclaw.md)
 > *Open-source data orchestration with lineage-first design.*
 
-- Core philosophy: declarative pipelines, lineage-first, composability
-- Architecture: Claw Engine, Metadata Store, Connector Layer, Policy Engine
-- Dataset-level, column-level, and row-level lineage tracking
-- Data contracts: schema, freshness, volume, quality
-- Integration patterns with dbt, Spark, Airflow, Kafka
-- CLI and GraphQL API examples
+| Section | Link |
+|---------|------|
+| What is OpenClaw? | [→](data_engineering/intro_openclaw.md#what-is-openclaw) |
+| Architecture | [→](data_engineering/intro_openclaw.md#architecture) |
+| Lineage Tracking | [→](data_engineering/intro_openclaw.md#lineage-tracking) |
+| Data Contracts | [→](data_engineering/intro_openclaw.md#data-contracts) |
+| Integration Patterns | [→](data_engineering/intro_openclaw.md#integration-patterns) |
+| CLI & GraphQL API | [→](data_engineering/intro_openclaw.md#cli-commands) |
+| Glossary | [→](data_engineering/intro_openclaw.md#glossary) |
 
 ### [Apache Spark](data_engineering/intro_apache_spark.md)
 > *The leading distributed data processing engine for TBs–PBs of data.*
 
-- Spark architecture: Driver, Executors, DAG, Catalyst optimizer
-- DataFrames API: select, filter, join, aggregate, window functions
-- Spark SQL and temporary views
-- Structured Streaming with Kafka integration
-- Performance tuning: partitioning, caching, broadcast joins, AQE
-- PySpark on Databricks and Spark 4.0 highlights
+| Section | Link |
+|---------|------|
+| What is Spark? | [→](data_engineering/intro_apache_spark.md#what-is-spark) |
+| Architecture | [→](data_engineering/intro_apache_spark.md#architecture) |
+| DataFrames | [→](data_engineering/intro_apache_spark.md#dataframes) |
+| Transformations | [→](data_engineering/intro_apache_spark.md#transformations) |
+| Spark SQL | [→](data_engineering/intro_apache_spark.md#spark-sql) |
+| Writing Data | [→](data_engineering/intro_apache_spark.md#writing-data) |
+| Structured Streaming | [→](data_engineering/intro_apache_spark.md#structured-streaming) |
+| Performance Tuning | [→](data_engineering/intro_apache_spark.md#performance-tuning) |
+| Spark in 2026 | [→](data_engineering/intro_apache_spark.md#spark-in-2026) |
+| Cheat Sheet | [→](data_engineering/intro_apache_spark.md#cheat-sheet) |
 
 ### [Apache Kafka](data_engineering/intro_apache_kafka.md)
 > *The standard for distributed event streaming at scale.*
 
-- Topics, partitions, offsets, consumer groups — with diagrams
-- Python producer and consumer with confluent-kafka
-- Schema Registry and Avro serialization
-- Kafka Connect: source and sink connectors
-- Debezium CDC (Change Data Capture) from PostgreSQL
-- KRaft mode (ZooKeeper-free), Kafka 4.0, Redpanda, WarpStream
+| Section | Link |
+|---------|------|
+| What is Kafka? | [→](data_engineering/intro_apache_kafka.md#what-is-kafka) |
+| Core Concepts | [→](data_engineering/intro_apache_kafka.md#core-concepts) |
+| Running Kafka | [→](data_engineering/intro_apache_kafka.md#running-kafka) |
+| Kafka CLI | [→](data_engineering/intro_apache_kafka.md#kafka-cli) |
+| Python Producer | [→](data_engineering/intro_apache_kafka.md#python-producer) |
+| Python Consumer | [→](data_engineering/intro_apache_kafka.md#python-consumer) |
+| Schema Registry | [→](data_engineering/intro_apache_kafka.md#kafka-schemas-with-schema-registry) |
+| Kafka Connect & Debezium CDC | [→](data_engineering/intro_apache_kafka.md#kafka-streams--kafka-connect) |
+| Data Engineering Pipelines | [→](data_engineering/intro_apache_kafka.md#kafka-in-data-engineering-pipelines) |
+| Kafka in 2026 | [→](data_engineering/intro_apache_kafka.md#kafka-in-2026) |
 
 ### [Apache Airflow](data_engineering/intro_apache_airflow.md)
 > *The most widely used workflow orchestration platform.*
 
-- TaskFlow API with `@dag` and `@task` decorators
-- DAG structure: schedules, retries, dependencies, callbacks
-- Dynamic task mapping (parallel tasks from a list)
-- Branching, sensors, and XComs
-- dbt + Airflow integration with Astronomer Cosmos
-- Airflow 3.0: asset-based scheduling
+| Section | Link |
+|---------|------|
+| What is Airflow? | [→](data_engineering/intro_apache_airflow.md#what-is-airflow) |
+| Core Concepts | [→](data_engineering/intro_apache_airflow.md#core-concepts) |
+| Writing DAGs (TaskFlow API) | [→](data_engineering/intro_apache_airflow.md#writing-dags) |
+| Common Operators | [→](data_engineering/intro_apache_airflow.md#common-operators) |
+| Dynamic Task Mapping | [→](data_engineering/intro_apache_airflow.md#advanced-dag-patterns) |
+| Branching & Sensors | [→](data_engineering/intro_apache_airflow.md#advanced-dag-patterns) |
+| dbt + Airflow (Cosmos) | [→](data_engineering/intro_apache_airflow.md#dbt--airflow-integration) |
+| Variables & Connections | [→](data_engineering/intro_apache_airflow.md#variables--connections) |
+| Monitoring & Alerts | [→](data_engineering/intro_apache_airflow.md#monitoring--alerts) |
+| Airflow in 2026 | [→](data_engineering/intro_apache_airflow.md#airflow-in-2026) |
+| Cheat Sheet | [→](data_engineering/intro_apache_airflow.md#cheat-sheet) |
 
 ### [Delta Lake](data_engineering/intro_delta_lake.md)
 > *ACID transactions, time travel, and schema enforcement on your data lake.*
 
-- The problems Delta Lake solves vs raw Parquet
-- ACID transactions and optimistic concurrency
-- Schema enforcement and schema evolution
-- Time travel: query data at any past version or timestamp
-- MERGE / upserts, updates, and deletes (GDPR compliance)
-- Change Data Feed (CDF) for incremental processing
-- Optimize, Z-Order, Vacuum, and Liquid Clustering (Delta 4.0)
+| Section | Link |
+|---------|------|
+| What is Delta Lake? | [→](data_engineering/intro_delta_lake.md#what-is-delta-lake) |
+| Core Features | [→](data_engineering/intro_delta_lake.md#core-features) |
+| Writing & Reading | [→](data_engineering/intro_delta_lake.md#writing-and-reading) |
+| ACID Transactions | [→](data_engineering/intro_delta_lake.md#acid-transactions) |
+| Schema Enforcement & Evolution | [→](data_engineering/intro_delta_lake.md#schema-enforcement--evolution) |
+| Time Travel | [→](data_engineering/intro_delta_lake.md#time-travel) |
+| Updates, Deletes & MERGE | [→](data_engineering/intro_delta_lake.md#updates-deletes-and-merge-upserts) |
+| Streaming | [→](data_engineering/intro_delta_lake.md#streaming-with-delta-lake) |
+| Change Data Feed | [→](data_engineering/intro_delta_lake.md#change-data-feed-cdf) |
+| Optimize & Z-Order | [→](data_engineering/intro_delta_lake.md#optimize--z-order) |
+| Delta Lake + dbt | [→](data_engineering/intro_delta_lake.md#delta-lake--dbt) |
+| Delta Lake in 2026 | [→](data_engineering/intro_delta_lake.md#delta-lake-in-2026) |
+| Cheat Sheet | [→](data_engineering/intro_delta_lake.md#cheat-sheet) |
 
 ### [Apache Iceberg](data_engineering/intro_apache_iceberg.md)
 > *The open table format that became the industry standard in 2026.*
 
-- How Iceberg differs from Delta Lake and Hudi
-- Metadata architecture: snapshots, manifest lists, delete files
-- Hidden partitioning and partition transforms (day, hour, bucket, truncate)
-- Partition evolution — change strategy without rewriting data
-- Schema evolution: add, drop, rename, type promotion
-- Time travel and snapshot management
-- PyIceberg: query Iceberg without Spark
-- Catalogs: Hive, Glue, Nessie, REST (Polaris)
-- DuckDB + Iceberg for lightweight querying
+| Section | Link |
+|---------|------|
+| What is Apache Iceberg? | [→](data_engineering/intro_apache_iceberg.md#what-is-apache-iceberg) |
+| Iceberg vs Delta vs Hudi | [→](data_engineering/intro_apache_iceberg.md#iceberg-vs-delta-lake-vs-hudi) |
+| Core Architecture | [→](data_engineering/intro_apache_iceberg.md#core-architecture) |
+| Getting Started | [→](data_engineering/intro_apache_iceberg.md#getting-started) |
+| Core Operations (CRUD + MERGE) | [→](data_engineering/intro_apache_iceberg.md#core-operations) |
+| Schema Evolution | [→](data_engineering/intro_apache_iceberg.md#schema-evolution) |
+| Hidden Partitioning | [→](data_engineering/intro_apache_iceberg.md#partitioning--hidden-partitioning) |
+| Partition Evolution | [→](data_engineering/intro_apache_iceberg.md#partition-evolution) |
+| Time Travel & Snapshots | [→](data_engineering/intro_apache_iceberg.md#time-travel--snapshots) |
+| Table Maintenance | [→](data_engineering/intro_apache_iceberg.md#table-maintenance) |
+| Catalogs (Glue, Nessie, REST) | [→](data_engineering/intro_apache_iceberg.md#iceberg-catalogs) |
+| DuckDB + Iceberg | [→](data_engineering/intro_apache_iceberg.md#duckdb--iceberg) |
+| Iceberg in 2026 | [→](data_engineering/intro_apache_iceberg.md#iceberg-in-2026) |
+| Cheat Sheet | [→](data_engineering/intro_apache_iceberg.md#cheat-sheet) |
 
 ### [DuckDB](data_engineering/intro_duckdb.md)
 > *In-process OLAP database — the SQLite of analytics. Fast, zero-setup, powerful.*
 
-- What DuckDB is and when to use it vs Spark vs Pandas
-- Reading CSV, Parquet, JSON, Delta, and Iceberg files directly (no imports)
-- Querying S3 and cloud storage
-- Python API: query DataFrames, Arrow tables, Polars — zero copy
-- Advanced SQL: window functions, ASOF joins, PIVOT, list operations
-- dbt + DuckDB for blazing-fast local development
-- MotherDuck: managed cloud DuckDB
-- DuckDB 1.x, WASM, and the 2026 extensions ecosystem
+| Section | Link |
+|---------|------|
+| What is DuckDB? | [→](data_engineering/intro_duckdb.md#what-is-duckdb) |
+| Installation & Setup | [→](data_engineering/intro_duckdb.md#installation--setup) |
+| Reading Files Directly | [→](data_engineering/intro_duckdb.md#reading-files-directly) |
+| Querying S3 / Cloud Storage | [→](data_engineering/intro_duckdb.md#s3--cloud-storage) |
+| Delta Lake & Iceberg | [→](data_engineering/intro_duckdb.md#delta-lake) |
+| Python API | [→](data_engineering/intro_duckdb.md#python-api) |
+| Querying DataFrames (zero-copy) | [→](data_engineering/intro_duckdb.md#querying-dataframes-directly) |
+| Advanced SQL Features | [→](data_engineering/intro_duckdb.md#advanced-sql-features) |
+| dbt + DuckDB | [→](data_engineering/intro_duckdb.md#integrations) |
+| DuckDB in Production | [→](data_engineering/intro_duckdb.md#duckdb-in-production) |
+| DuckDB vs Spark vs Pandas | [→](data_engineering/intro_duckdb.md#duckdb-vs-spark-vs-pandas) |
+| DuckDB in 2026 | [→](data_engineering/intro_duckdb.md#duckdb-in-2026) |
+| Cheat Sheet | [→](data_engineering/intro_duckdb.md#cheat-sheet) |
 
 ---
 
@@ -192,93 +246,120 @@ Large language models, agents, retrieval systems, and the infrastructure to run 
 ### [Anthropic AI – Claude, APIs & Core Concepts](ai_genai/intro_anthropic.md)
 > *Building with Claude — from the first API call to production agents.*
 
-- Anthropic's mission, Constitutional AI, and Responsible Scaling Policy
-- Claude model family: Opus 4.6, Sonnet 4.6, Haiku 4.5 — when to use each
-- Core LLM concepts: tokens, temperature, context window, hallucination, RLHF
-- Messages API: request/response structure, multi-turn conversations
-- Tool use (function calling) with full agentic loop example
-- Vision and multimodal inputs
-- Streaming responses
-- Prompt engineering patterns: role, CoT, few-shot, XML tags
-- Production: rate limits, context caching (90% cost reduction), Batch API
-- Extended thinking, Claude Code, and 2026 features
+| Section | Link |
+|---------|------|
+| Anthropic & Claude Overview | [→](ai_genai/intro_anthropic.md#anthropic--claude-overview) |
+| Claude Model Family | [→](ai_genai/intro_anthropic.md#claude-model-family) |
+| Core AI/LLM Concepts | [→](ai_genai/intro_anthropic.md#core-aillm-concepts) |
+| API Basics & Setup | [→](ai_genai/intro_anthropic.md#anthropic-api-basics) |
+| Messages API | [→](ai_genai/intro_anthropic.md#messages-api) |
+| Tool Use (Function Calling) | [→](ai_genai/intro_anthropic.md#tool-use-function-calling) |
+| Vision & Multimodal | [→](ai_genai/intro_anthropic.md#vision--multimodal) |
+| Streaming | [→](ai_genai/intro_anthropic.md#streaming) |
+| Prompt Engineering | [→](ai_genai/intro_anthropic.md#prompt-engineering) |
+| Constitutional AI & Safety | [→](ai_genai/intro_anthropic.md#claudes-constitution--safety) |
+| Context Caching & Batch API | [→](ai_genai/intro_anthropic.md#claude-in-production) |
+| 2026: What's New | [→](ai_genai/intro_anthropic.md#2026-whats-new) |
 
 ### [Model Context Protocol (MCP)](ai_genai/intro_mcp.md)
 > *The USB-C of AI integrations — one protocol to connect any LLM to any tool.*
 
-- Why MCP exists and the problem it solves
-- Architecture: clients, servers, transport (stdio vs HTTP/SSE)
-- Core primitives: Tools, Resources, and Prompts
-- MCP in Claude Code: `claude mcp add`, configuration
-- 30+ popular MCP servers with install commands
-- Building an MCP server in Python (data engineering example)
-- Building an MCP server in TypeScript
-- Remote MCP with OAuth, MCP proxies, and the 2026 ecosystem
+| Section | Link |
+|---------|------|
+| What is MCP? | [→](ai_genai/intro_mcp.md#what-is-mcp) |
+| Why MCP Matters | [→](ai_genai/intro_mcp.md#why-mcp-matters) |
+| Architecture & Transport | [→](ai_genai/intro_mcp.md#architecture) |
+| Core Primitives (Tools, Resources, Prompts) | [→](ai_genai/intro_mcp.md#core-primitives) |
+| MCP in Claude Code | [→](ai_genai/intro_mcp.md#mcp-in-claude-code) |
+| Popular MCP Servers | [→](ai_genai/intro_mcp.md#popular-mcp-servers) |
+| Build an MCP Server (Python) | [→](ai_genai/intro_mcp.md#building-an-mcp-server-python) |
+| Build an MCP Server (TypeScript) | [→](ai_genai/intro_mcp.md#building-an-mcp-server-typescript) |
+| MCP Client Usage | [→](ai_genai/intro_mcp.md#mcp-client-using-a-server) |
+| MCP in 2026 | [→](ai_genai/intro_mcp.md#mcp-in-2026--ecosystem) |
 
 ### [Agentic AI & Multi-Agent Systems](ai_genai/intro_agentic_ai.md)
 > *LLMs that plan, use tools, and autonomously execute multi-step tasks.*
 
-- Traditional LLM vs Agent — the conceptual shift
-- Agent anatomy: brain, tools, memory, perception, action
-- ReAct pattern (Reason + Act), Plan-and-Execute, Reflection
-- Full agentic loop implementation with Claude
-- Orchestrator + subagents pattern with parallel execution
-- Human-in-the-loop confirmation for risky actions
-- Agent memory: working, episodic, semantic, procedural
-- Safety: minimal footprint, reversibility, prompt injection detection
-- 2026 landscape: LangGraph, CrewAI, AutoGen, KEDA, cloud agent platforms
+| Section | Link |
+|---------|------|
+| What is Agentic AI? | [→](ai_genai/intro_agentic_ai.md#what-is-agentic-ai) |
+| Agent Anatomy | [→](ai_genai/intro_agentic_ai.md#agent-anatomy) |
+| Agent Patterns (ReAct, Plan-Execute) | [→](ai_genai/intro_agentic_ai.md#agent-patterns) |
+| Building Agents with Claude | [→](ai_genai/intro_agentic_ai.md#building-agents-with-claude) |
+| Multi-Agent Systems | [→](ai_genai/intro_agentic_ai.md#multi-agent-systems) |
+| Human-in-the-Loop | [→](ai_genai/intro_agentic_ai.md#anthropic-agent-sdk) |
+| Agent Memory | [→](ai_genai/intro_agentic_ai.md#agent-memory) |
+| Evaluation & Safety | [→](ai_genai/intro_agentic_ai.md#agent-evaluation--safety) |
+| Real-World Examples | [→](ai_genai/intro_agentic_ai.md#real-world-examples) |
+| 2026 Landscape | [→](ai_genai/intro_agentic_ai.md#2026-landscape) |
 
 ### [RAG – Retrieval-Augmented Generation](ai_genai/intro_rag.md)
 > *Give your LLM access to private, up-to-date, and domain-specific knowledge.*
 
-- Why RAG and how it compares to fine-tuning
-- Full pipeline: document loading → chunking → embedding → vector storage
-- Retrieval: basic vector search, hybrid BM25+vector, reranking (cross-encoder)
-- Generation: building context, system prompt design, citation handling
-- Advanced techniques: query rewriting, HyDE, contextual compression
-- Agentic RAG: the LLM decides when and what to retrieve
-- Evaluation with RAGAS: faithfulness, relevancy, context precision/recall
-- End-to-end RAG system example (60 lines of Python)
-- 2026: Graph RAG, multimodal RAG, corrective RAG, Self-RAG
+| Section | Link |
+|---------|------|
+| What is RAG? | [→](ai_genai/intro_rag.md#what-is-rag) |
+| RAG vs Fine-tuning | [→](ai_genai/intro_rag.md#rag-vs-fine-tuning) |
+| Pipeline Architecture | [→](ai_genai/intro_rag.md#rag-pipeline-architecture) |
+| Indexing: Loading & Chunking | [→](ai_genai/intro_rag.md#indexing-offline) |
+| Embeddings | [→](ai_genai/intro_rag.md#step-3-embedding) |
+| Vector Storage | [→](ai_genai/intro_rag.md#step-4-store-in-vector-db) |
+| Retrieval: Vector + Hybrid Search | [→](ai_genai/intro_rag.md#retrieval-online) |
+| Reranking | [→](ai_genai/intro_rag.md#reranking) |
+| Generation | [→](ai_genai/intro_rag.md#generation) |
+| Query Rewriting & HyDE | [→](ai_genai/intro_rag.md#advanced-rag-techniques) |
+| Agentic RAG | [→](ai_genai/intro_rag.md#agentic-rag) |
+| Evaluation (RAGAS) | [→](ai_genai/intro_rag.md#evaluation) |
+| End-to-End Example | [→](ai_genai/intro_rag.md#end-to-end-example) |
+| RAG in 2026 | [→](ai_genai/intro_rag.md#rag-in-2026) |
 
 ### [Vector Databases](ai_genai/intro_vector_databases.md)
 > *Storing and searching AI embeddings — the backbone of semantic search and RAG.*
 
-- How embeddings work and what makes vector search different
-- Similarity metrics: cosine, Euclidean, dot product
-- ANN algorithms: HNSW, IVF, ScaNN, DiskANN
-- **Pinecone**: managed cloud, metadata filtering, namespaces
-- **Weaviate**: hybrid search built-in, generative search (RAG in one call)
-- **Chroma**: developer-friendly, local-first, great for prototyping
-- **pgvector**: PostgreSQL extension — no new infrastructure
-- **Qdrant**: Rust-based, high performance, payload filtering
-- Choosing the right DB: decision guide
-- Embedding models in 2026: Voyage AI, OpenAI, Cohere, local options
+| Section | Link |
+|---------|------|
+| What is a Vector Database? | [→](ai_genai/intro_vector_databases.md#what-is-a-vector-database) |
+| Similarity Metrics | [→](ai_genai/intro_vector_databases.md#similarity-metrics) |
+| ANN Algorithms | [→](ai_genai/intro_vector_databases.md#ann-algorithms) |
+| Pinecone | [→](ai_genai/intro_vector_databases.md#1-pinecone-managed-cloud-native) |
+| Weaviate | [→](ai_genai/intro_vector_databases.md#2-weaviate-open-source-hybrid-search-built-in) |
+| Chroma | [→](ai_genai/intro_vector_databases.md#3-chroma-developer-friendly-local-first) |
+| pgvector | [→](ai_genai/intro_vector_databases.md#4-pgvector-postgresql-extension) |
+| Qdrant | [→](ai_genai/intro_vector_databases.md#5-qdrant-performance-focused-rust-based) |
+| Choosing a Vector DB | [→](ai_genai/intro_vector_databases.md#choosing-a-vector-database) |
+| Embedding Models in 2026 | [→](ai_genai/intro_vector_databases.md#embedding-models-in-2026) |
+| Production Patterns | [→](ai_genai/intro_vector_databases.md#production-patterns) |
 
 ### [LangChain & LangGraph](ai_genai/intro_langchain.md)
 > *The most widely used framework for building LLM-powered applications.*
 
-- LangChain Expression Language (LCEL): composing chains with `|` pipe operator
-- RAG chain: retriever → prompt → LLM → parser in 10 lines
-- Document loaders and text splitters (50+ formats)
-- Tool-calling agents with `@tool` decorator
-- **LangGraph**: stateful agent graphs with nodes, edges, conditional routing
-- Multi-agent graph: researcher → writer → reviewer pipeline
-- LangSmith: automatic tracing, cost tracking, eval platform
-- LangChain vs LlamaIndex vs raw Anthropic API — when to use each
+| Section | Link |
+|---------|------|
+| LangChain Overview | [→](ai_genai/intro_langchain.md#langchain-overview) |
+| LCEL – Pipe Operator | [→](ai_genai/intro_langchain.md#lcel--langchain-expression-language) |
+| RAG Chain | [→](ai_genai/intro_langchain.md#rag-chain) |
+| Document Loaders & Splitters | [→](ai_genai/intro_langchain.md#document-loaders--text-splitters) |
+| Agents with @tool | [→](ai_genai/intro_langchain.md#agents-in-langchain) |
+| LangGraph – Stateful Graphs | [→](ai_genai/intro_langchain.md#langgraph--stateful-agent-graphs) |
+| Multi-Agent Graph | [→](ai_genai/intro_langchain.md#multi-agent-graph) |
+| LangSmith Observability | [→](ai_genai/intro_langchain.md#langsmith-observability) |
+| LangChain vs LlamaIndex vs Raw API | [→](ai_genai/intro_langchain.md#langchain-vs-llamaindex-vs-raw-api) |
 
 ### [LLMOps](ai_genai/intro_llmops.md)
 > *Deploying, monitoring, evaluating, and maintaining LLMs in production.*
 
-- LLMOps vs MLOps — what's different
-- The LLMOps stack: tracing, evals, prompt management, cost control
-- **Observability**: LangSmith, Langfuse (open-source), Helicone API proxy
-- **Evaluations**: LLM-as-judge, RAGAS metrics, eval suites in CI/CD
-- **Prompt management**: versioning, A/B testing, PromptHub
-- **Cost management**: model routing, context caching, Batch API, token tracking
-- **Guardrails**: input sanitization, PII redaction, prompt injection detection
-- Production checklist: 25-point checklist covering observability → deployment
-- 2026 tools: LangSmith, Langfuse, Helicone, Arize, RAGAS, Guardrails AI
+| Section | Link |
+|---------|------|
+| LLMOps vs MLOps | [→](ai_genai/intro_llmops.md#llmops-vs-mlops) |
+| The LLMOps Stack | [→](ai_genai/intro_llmops.md#the-llmops-stack) |
+| Observability & Tracing | [→](ai_genai/intro_llmops.md#observability--tracing) |
+| Evaluations (LLM-as-judge, RAGAS) | [→](ai_genai/intro_llmops.md#evaluations-evals) |
+| Eval Suites in CI/CD | [→](ai_genai/intro_llmops.md#eval-suites-continuous-testing) |
+| Prompt Versioning & A/B Testing | [→](ai_genai/intro_llmops.md#prompt-management) |
+| Cost Management | [→](ai_genai/intro_llmops.md#cost-management) |
+| Guardrails (input/output safety) | [→](ai_genai/intro_llmops.md#guardrails) |
+| Production Checklist | [→](ai_genai/intro_llmops.md#production-checklist) |
+| LLMOps Tools in 2026 | [→](ai_genai/intro_llmops.md#llmops-tools-in-2026) |
 
 ---
 
@@ -289,74 +370,92 @@ Containers, orchestration, infrastructure as code, and CI/CD for modern software
 ### [Docker](devops/intro_docker.md)
 > *The standard for packaging applications into portable containers.*
 
-- Containers vs VMs — what Docker actually does under the hood
-- Dockerfile: every instruction explained with examples
-- Building images: layers, caching, multi-platform builds (Buildx)
-- Running containers: ports, environment variables, resource limits
-- Volumes and bind mounts: persistent storage patterns
-- Docker networking: bridge, host, user-defined networks
-- Docker Compose: full-stack multi-service example (API + DB + Redis + frontend)
-- Multi-stage builds: slim production images (Python and Node.js examples)
-- Docker in GitHub Actions CI/CD
-- Security: non-root users, image scanning, secrets management
-- Docker in 2026: Docker Scout, Wasm, Podman, Finch
+| Section | Link |
+|---------|------|
+| What is Docker? | [→](devops/intro_docker.md#what-is-docker) |
+| Core Concepts | [→](devops/intro_docker.md#core-concepts) |
+| Dockerfile | [→](devops/intro_docker.md#dockerfile) |
+| Images & Containers | [→](devops/intro_docker.md#images--containers) |
+| Volumes & Networking | [→](devops/intro_docker.md#volumes--networking) |
+| Docker Compose | [→](devops/intro_docker.md#docker-compose) |
+| Multi-Stage Builds | [→](devops/intro_docker.md#multi-stage-builds) |
+| Docker in CI/CD | [→](devops/intro_docker.md#docker-in-cicd) |
+| Security Best Practices | [→](devops/intro_docker.md#security-best-practices) |
+| Docker in 2026 | [→](devops/intro_docker.md#docker-in-2026) |
+| Cheat Sheet | [→](devops/intro_docker.md#cheat-sheet) |
 
 ### [Kubernetes](devops/intro_kubernetes.md)
 > *Container orchestration — automating deployment, scaling, and self-healing at scale.*
 
-- Control plane and worker node architecture (with diagrams)
-- Core objects: Pod, Deployment, Service, ConfigMap, Secret, Ingress, HPA
-- `kubectl` commands: every operation you'll need day-to-day
-- Workloads: Deployment (rolling updates, rollback), StatefulSet, DaemonSet, Job, CronJob
-- Services and DNS: ClusterIP, NodePort, LoadBalancer, service discovery
-- Storage: PersistentVolumes, PersistentVolumeClaims, StorageClasses
-- Configuration: ConfigMaps and Secrets (+ external secrets best practices)
-- Namespaces and RBAC: isolation and access control
-- Ingress with NGINX and cert-manager (TLS automation)
-- Autoscaling: HPA, VPA, Cluster Autoscaler
-- Observability: health probes, Prometheus + Grafana, Loki
-- K8s in 2026: Gateway API, Karpenter, Cilium/eBPF, ArgoCD/GitOps, KEDA, vCluster
+| Section | Link |
+|---------|------|
+| What is Kubernetes? | [→](devops/intro_kubernetes.md#what-is-kubernetes) |
+| Architecture | [→](devops/intro_kubernetes.md#architecture) |
+| Core Objects | [→](devops/intro_kubernetes.md#core-objects) |
+| kubectl Basics | [→](devops/intro_kubernetes.md#kubectl-basics) |
+| Deployments & Rollbacks | [→](devops/intro_kubernetes.md#workloads) |
+| StatefulSets, DaemonSets, Jobs | [→](devops/intro_kubernetes.md#statefulset) |
+| Services & DNS | [→](devops/intro_kubernetes.md#services--networking) |
+| Storage (PV / PVC) | [→](devops/intro_kubernetes.md#storage) |
+| ConfigMaps & Secrets | [→](devops/intro_kubernetes.md#configuration) |
+| Namespaces & RBAC | [→](devops/intro_kubernetes.md#namespaces--rbac) |
+| Ingress | [→](devops/intro_kubernetes.md#ingress) |
+| HPA & VPA Autoscaling | [→](devops/intro_kubernetes.md#scaling--auto-scaling) |
+| Observability (Prometheus, Loki) | [→](devops/intro_kubernetes.md#observability) |
+| Kubernetes in 2026 | [→](devops/intro_kubernetes.md#kubernetes-in-2026) |
+| Cheat Sheet | [→](devops/intro_kubernetes.md#cheat-sheet) |
 
 ### [Terraform](devops/intro_terraform.md)
 > *Infrastructure as Code — provision and manage cloud resources declaratively.*
 
-- Why IaC and how Terraform compares to Pulumi, CDK, CloudFormation
-- HCL language: types, expressions, functions, conditionals, loops, dynamic blocks
-- Resources and Data Sources — the building blocks
-- Variables and Outputs: inputs, validation, `tfvars` files
-- State management: remote state in S3, state commands, import
-- Modules: using registry modules, writing your own, folder structure
-- Workspaces and environment patterns
-- Full workflow: `init` → `validate` → `fmt` → `plan` → `apply`
-- Real-world example: AWS VPC + EKS cluster
-- Testing: `terraform test` (native), Terratest (Go)
-- **OpenTofu**: the open-source fork — drop-in replacement, state encryption
-- Ecosystem: Terragrunt, Atlantis, Infracost, tflint, Checkov
+| Section | Link |
+|---------|------|
+| What is Terraform? | [→](devops/intro_terraform.md#what-is-terraform) |
+| Core Concepts | [→](devops/intro_terraform.md#core-concepts) |
+| Installation | [→](devops/intro_terraform.md#installation) |
+| HCL Language Basics | [→](devops/intro_terraform.md#hcl-language-basics) |
+| Resources & Data Sources | [→](devops/intro_terraform.md#resources--data-sources) |
+| Variables & Outputs | [→](devops/intro_terraform.md#variables--outputs) |
+| State Management | [→](devops/intro_terraform.md#state-management) |
+| Modules | [→](devops/intro_terraform.md#modules) |
+| Workspaces & Environments | [→](devops/intro_terraform.md#workspaces--environments) |
+| Terraform Workflow | [→](devops/intro_terraform.md#terraform-workflow) |
+| Real-World Example (VPC + EKS) | [→](devops/intro_terraform.md#real-world-examples) |
+| Testing Terraform | [→](devops/intro_terraform.md#testing-terraform) |
+| OpenTofu (open-source fork) | [→](devops/intro_terraform.md#terraform-in-2026-opentofu) |
+| Cheat Sheet | [→](devops/intro_terraform.md#cheat-sheet) |
 
 ### [Helm](devops/intro_helm.md)
 > *The package manager for Kubernetes — deploy complex apps with one command.*
 
-- Charts, releases, repositories, and values — the core model
-- Full chart structure: `Chart.yaml`, `values.yaml`, `templates/`, `_helpers.tpl`
-- Go templating: value access, conditionals, loops, string functions
-- Environment-specific values: dev vs staging vs production overrides
-- OCI registries: push/pull charts like Docker images (2026 standard)
-- Debugging: `helm template`, `helm lint`, `helm get`
-- Installing 6 essential charts: Ingress NGINX, cert-manager, Prometheus, ArgoCD, External Secrets, KEDA
+| Section | Link |
+|---------|------|
+| What is Helm? | [→](devops/intro_helm.md#what-is-helm) |
+| Core Workflow | [→](devops/intro_helm.md#core-workflow) |
+| Chart Structure | [→](devops/intro_helm.md#chart-structure) |
+| Templates & Go Templating | [→](devops/intro_helm.md#templates) |
+| Values Override Strategies | [→](devops/intro_helm.md#values-override-strategies) |
+| Debugging & Testing | [→](devops/intro_helm.md#debugging--testing) |
+| OCI Registries | [→](devops/intro_helm.md#oci-registries-2026-standard) |
+| Popular Charts in 2026 | [→](devops/intro_helm.md#popular-charts-in-2026) |
+| Cheat Sheet | [→](devops/intro_helm.md#cheat-sheet) |
 
 ### [GitHub Actions](devops/intro_github_actions.md)
 > *Built-in CI/CD for GitHub — automate everything from tests to deployments.*
 
-- Workflow anatomy: events, jobs, steps, runners, environments
-- Trigger types: push, pull_request, schedule, workflow_dispatch, workflow_run
-- Service containers (PostgreSQL, Redis as sidecars for tests)
-- Matrix strategy: run jobs across multiple OS/language versions in parallel
-- Job dependencies and fan-out/fan-in patterns
-- Secrets and variables management
-- Reusable workflows: write once, call from multiple pipelines
-- Complete CI/CD pipeline: test → build image → push to GHCR → deploy staging → deploy prod (with approval gate)
-- 20+ essential actions: checkout, setup-python, docker/build-push, aws-credentials, trivy, slack
-- Context variables and expression syntax cheat sheet
+| Section | Link |
+|---------|------|
+| Core Concepts | [→](devops/intro_github_actions.md#core-concepts) |
+| Basic Workflow | [→](devops/intro_github_actions.md#basic-workflow) |
+| Triggers (on:) | [→](devops/intro_github_actions.md#triggers-on) |
+| Jobs & Steps | [→](devops/intro_github_actions.md#jobs--steps) |
+| Matrix Strategy | [→](devops/intro_github_actions.md#matrix-strategy-run-jobs-across-multiple-configs) |
+| Job Dependencies | [→](devops/intro_github_actions.md#job-dependencies--fan-outfan-in) |
+| Secrets & Variables | [→](devops/intro_github_actions.md#secrets--variables) |
+| Reusable Workflows | [→](devops/intro_github_actions.md#reusable-workflows) |
+| Complete CI/CD Pipeline | [→](devops/intro_github_actions.md#complete-cicd-pipeline-example) |
+| Useful Actions (2026) | [→](devops/intro_github_actions.md#useful-actions-2026) |
+| Cheat Sheet | [→](devops/intro_github_actions.md#cheat-sheet) |
 
 ---
 
